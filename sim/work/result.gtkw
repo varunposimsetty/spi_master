@@ -1,59 +1,42 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Tue Dec 17 09:27:12 2024
+[*] Fri Dec 27 09:29:01 2024
 [*]
-[dumpfile] "C:\Users\Posimsetty\Desktop\UART\sim\work\result.ghw"
-[dumpfile_mtime] "Tue Dec 17 09:26:59 2024"
-[dumpfile_size] 49779985
-[savefile] "C:\Users\Posimsetty\Desktop\UART\sim\work\result.gtkw"
-[timestart] 150000000000
+[dumpfile] "C:\Users\Posimsetty\Desktop\spi_master\sim\work\result.ghw"
+[dumpfile_mtime] "Fri Dec 27 09:21:01 2024"
+[dumpfile_size] 36389740
+[savefile] "C:\Users\Posimsetty\Desktop\spi_master\sim\work\result.gtkw"
+[timestart] 0
 [size] 2560 1369
-[pos] -1 -1
-*-36.582924 326745000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 2551 -9
+*-39.226780 5744000000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.tb.
-[treeopen] top.tb.dut_tx.
+[treeopen] top.tb.dut_spimaster.
 [sst_width] 278
 [signals_width] 286
 [sst_expanded] 1
 [sst_vpaned_height] 425
-@200
--BAUD CLK GENERATION
 @28
-top.tb.dut_clk_baud.i_clk_100mhz
-top.tb.dut_clk_baud.i_nrst_async
+top.tb.dut_spimaster.i_clk_100mhz
+top.tb.dut_spimaster.i_nrst_async
 @420
-top.tb.dut_clk_baud.count
+top.tb.dut_spimaster.clk_div_count
 @28
-top.tb.dut_clk_baud.clk_out
-@200
--PARITY GEN
-@28
-top.tb.dut_parity.parity_enable
+top.tb.dut_spimaster.clk_div
+top.tb.dut_spimaster.i_trigger_conversion
+top.tb.dut_spimaster.i_data_out
+#{top.tb.channel[2:0]} top.tb.channel[2] top.tb.channel[1] top.tb.channel[0]
+top.tb.dut_spimaster.o_spi_cs
+top.tb.dut_spimaster.o_spi_clk
 @22
-#{top.tb.data_in[7:0]} top.tb.data_in[7] top.tb.data_in[6] top.tb.data_in[5] top.tb.data_in[4] top.tb.data_in[3] top.tb.data_in[2] top.tb.data_in[1] top.tb.data_in[0]
+#{top.tb.dut_spimaster.mosi_data[10:0]} top.tb.dut_spimaster.mosi_data[10] top.tb.dut_spimaster.mosi_data[9] top.tb.dut_spimaster.mosi_data[8] top.tb.dut_spimaster.mosi_data[7] top.tb.dut_spimaster.mosi_data[6] top.tb.dut_spimaster.mosi_data[5] top.tb.dut_spimaster.mosi_data[4] top.tb.dut_spimaster.mosi_data[3] top.tb.dut_spimaster.mosi_data[2] top.tb.dut_spimaster.mosi_data[1] top.tb.dut_spimaster.mosi_data[0]
+#{top.tb.dut_spimaster.miso_data[11:0]} top.tb.dut_spimaster.miso_data[11] top.tb.dut_spimaster.miso_data[10] top.tb.dut_spimaster.miso_data[9] top.tb.dut_spimaster.miso_data[8] top.tb.dut_spimaster.miso_data[7] top.tb.dut_spimaster.miso_data[6] top.tb.dut_spimaster.miso_data[5] top.tb.dut_spimaster.miso_data[4] top.tb.dut_spimaster.miso_data[3] top.tb.dut_spimaster.miso_data[2] top.tb.dut_spimaster.miso_data[1] top.tb.dut_spimaster.miso_data[0]
 @28
-top.tb.dut_parity.parity_mode
-top.tb.dut_parity.parity_out
-@200
--UART TX
-@28
-top.tb.dut_tx.i_clk_100mhz
-top.tb.dut_tx.i_nrst_async
-top.tb.dut_tx.baud_clk
-top.tb.dut_tx.start
-top.tb.dut_tx.parity_enable
-top.tb.dut_tx.parity_mode
+top.tb.dut_spimaster.o_spi_data_in
 @22
-#{top.tb.data_in[7:0]} top.tb.data_in[7] top.tb.data_in[6] top.tb.data_in[5] top.tb.data_in[4] top.tb.data_in[3] top.tb.data_in[2] top.tb.data_in[1] top.tb.data_in[0]
+#{top.tb.adc_result[11:0]} top.tb.adc_result[11] top.tb.adc_result[10] top.tb.adc_result[9] top.tb.adc_result[8] top.tb.adc_result[7] top.tb.adc_result[6] top.tb.adc_result[5] top.tb.adc_result[4] top.tb.adc_result[3] top.tb.adc_result[2] top.tb.adc_result[1] top.tb.adc_result[0]
 @28
-#{top.tb.dut_tx.data_buffer[7:0]} top.tb.dut_tx.data_buffer[7] top.tb.dut_tx.data_buffer[6] top.tb.dut_tx.data_buffer[5] top.tb.dut_tx.data_buffer[4] top.tb.dut_tx.data_buffer[3] top.tb.dut_tx.data_buffer[2] top.tb.dut_tx.data_buffer[1] top.tb.dut_tx.data_buffer[0]
-@420
-top.tb.dut_tx.count
-@22
-#{top.tb.dut_tx.tx_reg_buffer[10:0]} top.tb.dut_tx.tx_reg_buffer[10] top.tb.dut_tx.tx_reg_buffer[9] top.tb.dut_tx.tx_reg_buffer[8] top.tb.dut_tx.tx_reg_buffer[7] top.tb.dut_tx.tx_reg_buffer[6] top.tb.dut_tx.tx_reg_buffer[5] top.tb.dut_tx.tx_reg_buffer[4] top.tb.dut_tx.tx_reg_buffer[3] top.tb.dut_tx.tx_reg_buffer[2] top.tb.dut_tx.tx_reg_buffer[1] top.tb.dut_tx.tx_reg_buffer[0]
-@28
-top.tb.tx
-top.tb.ready
+top.tb.dut_spimaster.o_result_valid
 [pattern_trace] 1
 [pattern_trace] 0
