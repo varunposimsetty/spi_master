@@ -10,6 +10,3 @@ This project is based on the MCP3208 ADC. For complete details, refer to the off
 - In the first 12 pulses we write the nature of input configuration and the channel selection.
 - In the next 12 pulses we read the Digital code word of the analog voltage. 
 
-## Future Scope 
-To implement a multi slave / multi peripheral spi master. 
-
